@@ -1,0 +1,111 @@
+---
+import { StackToggle } from "./StackToggle.tsx";
+---
+<div
+  class="relative w-full mx-auto min-h-screen bg-neutral-950 p-4 sm:p-8"
+>
+  <div
+    class="relative max-w-4xl mx-auto backdrop-blur-xl bg-neutral-900/60 rounded-2xl shadow-2xl p-8 text-neutral-100 border border-neutral-800"
+  >
+    <div class="space-y-8">
+      <div class="text-center">
+        <h1
+          class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-white tracking-tight"
+        >
+          Hey Wojtek!
+        </h1>
+        <p class="text-2xl sm:text-3xl md:text-4xl text-neutral-200">
+          What's you wanna build today?
+        </p>
+      </div>
+
+      <p class="text-lg text-center text-neutral-300 mt-8 leading-relaxed">
+        Starter zawiera wszystko, czego potrzebujesz do rozpoczęcia tworzenia
+        <br class="hidden sm:block" />
+        <span class="font-semibold text-white">nowoczesnych aplikacji webowych!</span>
+      </p>
+
+      <StackToggle className="max-w-2xl mx-auto mt-2" client:idle>
+        <div class="flex flex-col gap-6">
+          <div class="bg-neutral-900/70 backdrop-blur-lg rounded-xl p-6 border border-neutral-800">
+            <h2
+              class="text-2xl font-semibold mb-4 text-white"
+            >
+              Core
+            </h2>
+            <ul class="space-y-3">
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm">Astro v5.5.5</span>
+                <span class="text-neutral-300">- Metaframework do aplikacji webowych</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm">React v19</span>
+                <span class="text-neutral-300">- Biblioteka UI do komponentów interaktywnych</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm">TypeScript</span>
+                <span class="text-neutral-300">- Typowanie statyczne</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-neutral-900/70 backdrop-blur-lg rounded-xl p-6 border border-neutral-800">
+            <h2
+              class="text-2xl font-semibold mb-4 text-white"
+            >
+              Stylowanie
+            </h2>
+            <ul class="space-y-3">
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm"
+                  >Tailwind CSS v4</span
+                >
+                <span class="text-neutral-300">- Utility-first CSS framework</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm">shadcn/ui</span>
+                <span class="text-neutral-300">- Zestaw komponentów na Tailwind</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-neutral-900/70 backdrop-blur-lg rounded-xl p-6 border border-neutral-800">
+            <h2
+              class="text-2xl font-semibold mb-4 text-white"
+            >
+              Statyczna analiza kodu
+            </h2>
+            <ul class="space-y-3">
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm">ESLint v9</span>
+                <span class="text-neutral-300">- Lintowanie kodu</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm">Prettier</span>
+                <span class="text-neutral-300">- Formatowanie kodu</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm"
+                  >Husky i Lint-staged</span
+                >
+                <span class="text-neutral-300">- Automatyczna analiza kodu przed commitowaniem</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-neutral-900/70 backdrop-blur-lg rounded-xl p-6 border border-neutral-800">
+            <h2 class="text-2xl font-semibold mb-4 text-white">
+              Backend i baza
+            </h2>
+            <ul class="space-y-3">
+              <li class="flex items-center space-x-3">
+                <span class="font-mono bg-neutral-800 px-3 py-1.5 rounded-lg text-neutral-200 shadow-sm">Supabase (opcjonalnie)</span>
+                <span class="text-neutral-300">- Auth, baza danych Postgres, Realtime</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </StackToggle>
+    </div>
+  </div>
+</div>
